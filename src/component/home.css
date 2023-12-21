@@ -1,0 +1,22 @@
+
+
+.home{
+    background: url('./background.jpg');
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+
+}
+
+.welcome-text{
+    color: white;
+    font-weight: bold;
+}
+.h1{
+    margin-bottom: 15px;
+}
+.h3{
+    margin-left: 50px;
+}
