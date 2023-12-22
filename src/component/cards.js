@@ -40,8 +40,21 @@ function Card(){
                             MMM is a ministry that encourages both Jews and Gentile
                             believers, to come together and pray for the spread of Good
                             News throughout the world. MMM urges believers to work 
-                            with their own hands and share with those who are in need 
-                            as this is the real secret of spreading the Good News.
+                            with their own hands and share with those who are
+                        </p>
+                        <a href='#' className='card-button'>Read More</a>
+                </div>
+
+            </div>
+
+            <div className='card'>
+                <div className='card-content'>
+                    <h1>Objective</h1>
+                    <p>
+                            The main objective of MMM is to accomplish the mission that
+                            Y'shua gave us in fast and efficient way. (Matt. 28:19-20). The
+                            spiritual bondage of this world can only be broken by good
+                            work and intercession of true believers on strategic
                         </p>
                         <a href='#' className='card-button'>Read More</a>
                 </div>
