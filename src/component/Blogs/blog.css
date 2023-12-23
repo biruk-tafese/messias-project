@@ -1,0 +1,37 @@
+
+
+.parent{
+    display: flex;
+    margin-top: 90px;
+    justify-content: space-between;
+}
+
+.content{
+    width: 300px;
+    height: 300px;
+    margin-left: 100px;
+}
+.content h1{
+    margin-bottom: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.content p{
+    margin-bottom: 20px;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.content button{
+    text-align: center;
+    color: white;
+    padding: 17px 68px 16px 68px;
+    background-color: #be3220;
+    border-radius: 10px;
+}
+
+.blogs{
+    margin-right: 100px;
+}
