@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import './navBar.css'
 
 function NavBar(){
@@ -7,12 +9,12 @@ function NavBar(){
             <h2 className='logo'>Messia's Mission Ministry</h2>
             <nav>
                  <ul className='ul'>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Ministry</a></li>
-                    <li><a href="#">About</a></li>  
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">Donate</a></li>
+                    <li><Link to='/'>Home</Link></li>
+                    <li><Link to='/ministry'>Ministry</Link></li>
+                    <li><Link to='/about'>About</Link></li>  
+                    <li><Link to='/blog'>Blogs</Link></li>
+                    <li><Link to='/contact'>Contact Us</Link></li>
+                    <li><Link to='/donate'>Donate</Link></li>
                  </ul>
             </nav>
         </div>

@@ -1,17 +1,33 @@
-import NavBar from './component/NavBar/navBar';
-import Blog from   './component/Blogs/blogs';
-import Home from   './component/Home/home';
-import Card from   './component/Card/cards';
+import {Routes, Route } from 'react-router-dom';
+
+import HomePage from './Pages/Home';
+import About from './Pages/About';
+import BlogPage from './Pages/Blog';
+import Contact from './Pages/Contact';
+import Ministry from './Pages/Ministries';
+import Donate from './Pages/Donate';
+
 
 
 function App() {
   return (
-    <>
-    <NavBar/>
-    <Home/>
-    <Card/>
-    <Blog/>
-    </>
+     <Routes>
+
+     <Route path='/' element={<HomePage/>}/>
+
+     <Route path='/about' element={<About/>}/>
+
+     <Route path='/blog' element={<BlogPage/>}/>
+
+     <Route path='/contact' element={<Contact/>}/>
+
+     <Route path='/ministry' element={<Ministry/>}/>
+
+     <Route path='/donate' element={<Donate/>}/>
+
+
+     </Routes>
+    
   );
 }
 
