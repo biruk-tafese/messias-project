@@ -7,6 +7,7 @@ export default function CardList(props){
             {
                 props.datas.map((data) => (
                     <CardItems
+                    key = {data.title}
                     title = {data.title} 
                     discription = {data.discription}
                     />
