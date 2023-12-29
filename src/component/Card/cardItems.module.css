@@ -3,9 +3,9 @@
     width: 20%;
     background-color: white;
     border-radius: 10px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 4px rgba(3, 2, 2, 0.3);
     overflow: hidden;
-    margin-top: 100px;
+    /* margin-top: 100px; */
 }
 .card:hover {
     transform: scale(1.05); /* Scale the card on hover */
@@ -17,12 +17,15 @@
 .cardContent h1{
     font-size: 25px;
     margin-bottom: 10px;
+    color: #534f4f;
 }
 
 .cardContent p{
-    font-size: 15px;
+    font-size: 18px;
     color: #666;
     margin-bottom: 20px;
+    text-indent: 20px;
+    text-align: justify;
 }
 
 .cardButton{
@@ -33,3 +36,4 @@
     border-radius: 5px;
     padding: 8px 16px;
 }
+

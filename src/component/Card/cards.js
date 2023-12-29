@@ -1,5 +1,5 @@
 import CardList from './CardListes'
-import './card.css'
+import classes from './cardLists.module.css'
 
 const Dummy_data = [
 
@@ -12,7 +12,7 @@ const Dummy_data = [
 },
 
 {title: 'Purpose',
-    discription: "MMM is a ministry that encourages both Jews and Gentile believers, to come together and pray for the spread of Good News throughout the world. MMM urges believers to work with their own hands and share with those who are"
+    discription: "MMM is a ministry that encourages both Jews and Gentile believers, to come together and pray for the spread of Good News throughout the world. MMM urges believers to work with their own hands and share with those who are in need as this is the real secret"
 },
 
 {title: 'Objective',
@@ -22,7 +22,8 @@ const Dummy_data = [
 
 function Card(){
     return(
-        <div className='background'>
+        <div>
+            <h1 className={classes.title}>Who we are</h1>
                <CardList datas = {Dummy_data}/>
            </div>
     

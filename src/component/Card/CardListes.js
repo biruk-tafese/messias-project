@@ -3,7 +3,6 @@ import CardItems from './CardItems'
 
 export default function CardList(props){
     return(
-    
             <div className={classes.cardContainer}>
             {
                 props.datas.map((data) => (
@@ -13,10 +12,7 @@ export default function CardList(props){
                     />
                 ))
             }
-
         </div>
-
-
         
     )
 }

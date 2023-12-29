@@ -1,8 +1,8 @@
 
-*{
+/* *{
     box-sizing: border-box;
     font-family: Poppins, sans-serif;
-}
+} */
 
 .background{
     background-color: white;
@@ -10,7 +10,16 @@
 .cardContainer{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 25px;
     width: 100%;
     
+}
+.title{
+    margin-left: 550px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #534f4f;
+    font-size: 40px;
+    line-height: 50px;
 }
