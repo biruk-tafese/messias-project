@@ -1,0 +1,16 @@
+
+*{
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+
+.background{
+    background-color: white;
+}
+.cardContainer{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    width: 100%;
+    
+}
