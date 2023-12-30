@@ -38,5 +38,6 @@
 }
 .cardButton:hover{
     border: 2px solid #2ecc71;
+    cursor: pointer
 }
 
