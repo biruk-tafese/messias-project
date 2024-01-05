@@ -1,0 +1,72 @@
+
+/*  container */
+
+
+.title {
+    text-align: left;
+    margin-top: 40px;
+    margin-bottom: 7px;
+}
+.infocontainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates 3 columns of equal width */
+    gap: 10px; /* Adjust the gap between grid items */
+    width: 100%;
+    height: 50vh;
+  }
+  
+  /* Styles for each inner div */
+  .infocontainer > div {
+    height: 100%; /* Set height of each div to 100% of .infocontainer */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Adjust vertical alignment if needed */
+    padding: 10px; /* Add padding for inner content */
+  }
+  
+
+  .infocontainer > div {
+    height: 100%; /* Set height of each div to 100% of .infocontainer */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Adjust vertical alignment if needed */
+  }
+ 
+.address-info {
+    padding: 10px;
+    margin-left: 7px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Add some space between list items (optional) */
+    border-radius: 5px;
+
+}
+
+ul {
+    list-style: none; /* Remove default list styles */
+
+}
+
+
+.ourAdd {
+    padding-bottom: 10px;
+    padding-top:20px;
+    color: rgb(8, 62, 109);
+}
+.contact-info {
+    list-style: none; /* Remove default list styles */
+    padding: 10px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Add some space between list items (optional) */
+}
+
+.person-info {
+    list-style: none; /* Remove default list styles */
+    padding: 10px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Add some space between list items (optional) */
+}
