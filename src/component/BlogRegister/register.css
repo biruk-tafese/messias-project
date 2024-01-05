@@ -1,0 +1,63 @@
+
+
+
+.contents{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 40px auto;
+    height: 250px;
+    background-color: #f2b949;
+}
+
+.discription{
+    width: 55%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    padding-right: 30px;
+    margin-left: 20px;
+}
+.discription h1{
+    margin-top: 0px;
+    padding-top: 0px;
+    margin-bottom: 15px;
+    font-family: Poppins, sans-serif;
+    color: white;
+}
+.discription p{
+    font-size: 20px;
+    line-height: 22px;
+    color: white;
+    letter-spacing: normal;
+}
+.input{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 10px;
+}
+.input input{
+    width: 70%;
+    height: 60px;
+
+}
+.input button{
+    width: 40%;
+    height: 60px;
+    background-color: #1d5173;
+    color: white;
+    font-size: 15px;
+}
+
+input::placeholder {
+    color: #999; /* Set the color of the placeholder text */
+    font-style: normal; /* Optionally, set the font style */
+    padding: 30px;
+    font-size: 20px;/* Add any other styling properties as needed */
+  }
