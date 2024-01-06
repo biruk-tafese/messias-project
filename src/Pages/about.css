@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,600;1,800&family=Roboto+Slab:wght@500;600;900&display=swap');
+
+.container {
+    margin-left: 40px;
+}
+
+hr {
+    height: 4px;
+    width: 90%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    background: linear-gradient(to right, transparent, #00114e, transparent);
+  }
+  
+.title  {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.content-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  
+  .right-content {
+    flex: 1;
+    order: 2;
+    padding: 4px;
+    margin-right: 30px;
+    text-align: left;
+  }
+  .right-content p {
+    font-style: 'Romans', 'Georgia';
+    font-size: 20;
+    margin-top: 20px;
+
+  }
+  
+  .left-content {
+    flex: 1;
+    order: 1;
+    /* Additional styling for left content */
+  }
+  
+  /* Adjust styles as needed */
+  .right-content-2 {
+    flex: 1;
+    order: 1;
+    padding: 4px;
+    margin-right: 30px;
+    text-align: left;
+  }
+
+  .left-content-2 {
+    flex: 1;
+    order: 2;
+    
+  }
+
+  .right-content-2 p {
+    font-style: 'Romans', 'Georgia';
+    font-size: 20;
+    margin-top: 20px;
+
+  }
