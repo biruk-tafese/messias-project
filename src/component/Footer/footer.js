@@ -1,3 +1,5 @@
+import { BsMailboxFlag, BsFillTelephoneFill} from "react-icons/bs";
+import { MdOutlineMail } from "react-icons/md";
 import './footer.css'
 
 export default function Footer(){
@@ -15,11 +17,29 @@ export default function Footer(){
                 </div>
         
                 <div className="address">
-                    <h3>Contact Info</h3>
-                    <p>Arada Sub City, Wereda-7, Kebele-10 House Number 046</p>
-                    <p>P.O.Box: 34354 Addis Ababa, Ethiopia</p>
-                    <p>+251118333094</p>
-                    <p>Email: info@evasue.net</p>
+                <div className='contact-info'>
+              <ul>
+               <h2 className='ourAdd3'>Contact Info</h2>
+               <li className="contact-item">
+                <div className="icon-description">
+                  <BsMailboxFlag style={{  fontSize: '20px' }} className='icons'/>
+                    <span>P.O.Box: 34354 Addis Ababa, Ethiopia Kebele-10 House Number 04</span>
+                  </div>
+               </li>
+               <li className="contact-item">
+                  <div className="icon-description">
+                    <BsFillTelephoneFill style={{fontSize: '20px' }} className='icons'/>
+                      <a href="tel:+251118333094">+251118333094</a>
+                  </div>
+               </li>
+               <li className="contact-item">
+                 <div className="icon-description">
+                    <MdOutlineMail style={{  fontSize: '20px' }} className='icons' />
+                      <a href="mailto:info@messias.net">Email: info@messias.net</a>
+                   </div>
+                </li>
+            </ul>
+        </div>  
                 </div>
         </div>
         </>
