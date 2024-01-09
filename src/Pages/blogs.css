@@ -1,0 +1,71 @@
+
+.blogs-logo {
+  font-size: 20px;
+  height: 70vh;
+  width: 100%;
+  background-image: url('../Images/backgroundBlog.jpg');
+  background-repeat: no-repeat;
+  border: bottom 4px black;
+
+}
+
+.blogs {
+  text-align: center;
+  padding: 10%;
+  color: #ccc;
+  font-size: 60px;
+}
+
+/* Additional CSS for aligning cards in a row */
+.card-container {
+  flex: 1;
+  max-width: 300px; /* Set your desired width */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  margin: 30px;
+  transition: transform 0.3s ease-in-out; /* Transition for hover effect */
+}
+
+.card-container:hover {
+  transform: translateY(-5px); /* Adjust the hover effect */
+}
+
+.card-container .image-card img {
+  width: 100%; /* Adjust image width */
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.card-container .card-title {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.card-container .card-text {
+  font-size: 14px;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.card-container .btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card-container .btn:hover {
+  background-color: #0056b3;
+}
+
+/* Style to arrange cards in a row */
+.card-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
