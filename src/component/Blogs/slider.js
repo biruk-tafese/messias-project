@@ -33,9 +33,6 @@ export default class SimpleSlider extends Component {
         <div className="card">
           <h3>5</h3>
         </div>
-        {/* <div className="card">
-          <h3>6</h3>
-        </div> */}
       </Slider>
     );
   }

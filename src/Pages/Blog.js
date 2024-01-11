@@ -1,11 +1,10 @@
-import NavBar from '../component/NavBar/navBar';
 import './blogs.css';
 import blosImage from '../Images/OurBlos.jpg';
 
 export default function BlogPage() {
   return (
     <>
-      <NavBar />
+      
         <div className='blogs-logo'>
             <h5 className='blogs'>Our Blogs</h5>
         </div>
