@@ -60,3 +60,31 @@ input::placeholder {
     padding: 30px;
     font-size: 20px;/* Add any other styling properties as needed */
   }
+
+
+  /* Common styles for all screen sizes */
+.contents {
+    flex-direction: column; /* Display in column layout for smaller screens */
+    height: auto;
+  }
+  
+  .discription, .input {
+    width: 100%; /* Full width for smaller screens */
+    padding: 20px; /* Add padding for better spacing on smaller screens */
+  }
+  
+  .input input, .input button {
+    width: 80%; /* Full width for input and button on smaller screens */
+  }
+  
+  /* Media query for larger screens (min-width: 850px) */
+  @media screen and (min-width: 850px) {
+    .contents {
+      flex-direction: row; /* Switch back to row layout for larger screens */
+    }
+  
+    .discription, .input {
+      width: 50%; /* Adjust width for larger screens */
+    }
+  }
+  

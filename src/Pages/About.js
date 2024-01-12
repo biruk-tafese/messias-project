@@ -4,6 +4,7 @@ import { useInView } from 'react-intersection-observer';
 import NavBar from '../component/NavBar/navBar';
 import missionImage from '../Images/Mission.jpg';
 import objectiveImage from '../Images/objective.jpg';
+import Footer from '../component/Footer/footer';
 import './about.css';
 
 
@@ -219,7 +220,9 @@ const About = () => {
               </div>
             </div>
           </div>
-          <div> </div>
+          <div> 
+          </div>
+          <Footer/>
       </>
     );
   };

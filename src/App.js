@@ -6,7 +6,7 @@ import BlogPage from './Pages/Blog';
 import Contact from './Pages/Contact';
 import Ministry from './Pages/Ministries';
 import Donate from './Pages/Donate';
-
+import Blogdetails from './Pages/Blogdetails';
 
 
 function App() {
@@ -24,6 +24,7 @@ function App() {
      <Route path='/ministry' element={<Ministry/>}/>
 
      <Route path='/donate' element={<Donate/>}/>
+     <Route path='/Blogdetails/:blogId' element={<Blogdetails />} />
 
 
      </Routes>

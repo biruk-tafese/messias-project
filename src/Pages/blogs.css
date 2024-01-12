@@ -1,12 +1,11 @@
-
+/* Common styles for all screen sizes */
 .blogs-logo {
   font-size: 20px;
   height: 70vh;
   width: 100%;
   background-image: url('../Images/backgroundBlog.jpg');
   background-repeat: no-repeat;
-  border: bottom 4px black;
-
+  border-bottom: 4px solid black;
 }
 
 .blogs {
@@ -18,14 +17,24 @@
 
 /* Additional CSS for aligning cards in a row */
 .card-container {
-  flex: 1;
-  max-width: 300px; /* Set your desired width */
+  flex: 1 0 calc(33.33% - 30px);
+  max-width: calc(35% - 20px);
   border: 1px solid #ccc;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  padding: 15px;
-  margin: 30px;
+  padding: 25px;
+  margin-left: 10px;
   transition: transform 0.3s ease-in-out; /* Transition for hover effect */
+}
+
+/* Style to arrange cards in a row with three columns */
+.card-row {
+
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  gap: 10px;
+  justify-content: space-between; /* Add this property to evenly distribute columns */
 }
 
 .card-container:hover {
@@ -63,9 +72,43 @@
   background-color: #0056b3;
 }
 
-/* Style to arrange cards in a row */
+@media (max-width: 768px) {  /* Updated CSS for responsiveness */
+.blogs-logo {
+  font-size: 20px;
+  height: 40vh; /* Adjusted height for mobile devices */
+  width: 100%;
+  background-image: url('../Images/backgroundBlog.jpg');
+  background-repeat: no-repeat;
+  border-bottom: 4px solid black; /* Corrected border syntax */
+}
+
+.blogs {
+  text-align: center;
+  padding: 5%; /* Adjusted padding for better spacing */
+  color: #ccc;
+  font-size: 24px; /* Adjusted font size for better readability */
+}
+
+.card-container {
+  flex: 1;
+  flex: 0 0 calc(100% - 30px); /* Full width for mobile devices */
+  max-width: calc(100% - 30px); /* Full width for mobile devices */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  margin: 15px; /* Adjusted margin for better spacing */
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Updated Style to arrange cards in a column for mobile devices */
 .card-row {
   display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
+  flex-direction: column;
+  gap: 15px; /* Adjusted gap for better spacing */
+}
+
+/* ... (rest of your styles remain unchanged) */
+
+  
 }
