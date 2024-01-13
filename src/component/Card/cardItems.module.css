@@ -1,26 +1,28 @@
-
-.card{
+/* Common styles for all screen sizes */
+.card {
     width: 20%;
     background-color: white;
     border-radius: 10px;
     box-shadow: 0px 2px 4px rgba(3, 2, 2, 0.3);
     overflow: hidden;
-    /* margin-top: 100px; */
+    margin-top: 20px;
 }
+
 .card:hover {
     transform: scale(1.05); /* Scale the card on hover */
 }
-.cardContent{
+
+.cardContent {
     padding: 20px;
 }
 
-.cardContent h1{
+.cardContent h1 {
     font-size: 25px;
     margin-bottom: 10px;
     color: #534f4f;
 }
 
-.cardContent p{
+.cardContent p {
     font-size: 18px;
     color: #666;
     margin-bottom: 20px;
@@ -28,7 +30,7 @@
     text-align: justify;
 }
 
-.cardButton{
+.cardButton {
     display: inline-block;
     background-color: #1d5173;
     color: #fff;
@@ -36,8 +38,27 @@
     border-radius: 5px;
     padding: 8px 16px;
 }
-.cardButton:hover{
+
+.cardButton:hover {
     border: 2px solid #2ecc71;
-    cursor: pointer
+    cursor: pointer;
 }
 
+/* Media query for small screens (max-width: 849px) */
+@media screen and (max-width: 849px) {
+    .card {
+        width: 90%; /* Adjust width for smaller screens */
+    }
+}
+
+/* Media query for medium screens (850px to 991px) */
+@media screen and (min-width: 850px) and (max-width: 991px) {
+    .card {
+        width: 45%; /* Adjust width for medium screens */
+    }
+}
+
+/* Media query for large screens (min-width: 992px) */
+@media screen and (min-width: 992px) {
+    /* Add styles specific to larger screens if needed */
+}

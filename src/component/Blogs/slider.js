@@ -1,39 +1,34 @@
-// Slider.js
-
-import React, { Component } from "react";
+import React from "react";
 import Slider from "react-slick";
+import { useNavigate } from "react-router-dom";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import blogs from "../../Pages/blogsData";
 
-export default class SimpleSlider extends Component {
-  render() {
-    const settings = {
-      dots: true,
-      infinite: true,
-      speed: 500,
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      autoplay: true, // Set to true for auto-advancing
-      autoplaySpeed: 2000, // Adjust the speed in milliseconds
-    };
-    return (
-      <Slider {...settings}>
-        <div className="card">
-          <h3>1</h3>
+export default function SimpleSlider() {
+  const navigate = useNavigate();
+
+  const handleSlideClick = (blogId) => {
+    // Navigate to the blogdetails page with the corresponding blogId
+    navigate(`/blogdetails/${blogId}`);
+  };
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+  };
+
+  return (
+    <Slider {...settings}>
+      {blogs.blogList.map(blog => (
+        <div key={blog.id} className="card" onClick={() => handleSlideClick(blog.id)}>
+          <h3>{blog.title}</h3>
         </div>
-        <div className="card">
-          <h3>2</h3>
-        </div>
-        <div className="card"> 
-          <h3>3</h3>
-        </div>
-        <div className="card">
-          <h3>4</h3>
-        </div>
-        <div className="card">
-          <h3>5</h3>
-        </div>
-      </Slider>
-    );
-  }
+      ))}
+    </Slider>
+  );
 }

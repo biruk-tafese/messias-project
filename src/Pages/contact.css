@@ -216,5 +216,56 @@ button[type='submit'] {
 button[type='submit']:hover {
   background-color: rgb(94, 4, 4);
 }
-/* adding sth */
-/* adding sth again */
+
+
+/* Common styles for all screen sizes */
+
+/* ... (existing styles) */
+
+/* Media query for tablets and smaller screens */
+@media (max-width: 1024px) {
+  .infocontainer {
+    grid-template-columns: repeat(2, 1fr); /* Display 2 columns for tablets */
+  }
+
+  .container-two h1 {
+    font-size: 40px; /* Reduce font size for smaller screens */
+  }
+
+  .SupportBtn button {
+    padding: 12px 30px; /* Adjust padding for smaller screens */
+    font-size: 18px; /* Adjust font size for smaller screens */
+  }
+
+  .container-three {
+    max-width: 100%; /* Adjust max-width for smaller screens */
+    margin-left: 0; /* Remove left margin for smaller screens */
+  }
+
+  .input-fields input,
+  .input-fields textarea {
+    width: 100%; /* Make input fields take full width on smaller screens */
+  }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 767px) {
+  .infocontainer {
+    grid-template-columns: repeat(1, 1fr); /* Display 1 column for mobile devices */
+  }
+
+  .container-two h1 {
+    font-size: 30px; /* Further reduce font size for mobile devices */
+  }
+
+  .SupportBtn {
+    flex-direction: column; /* Stack buttons vertically on mobile devices */
+    align-items: center; /* Center buttons on mobile devices */
+  }
+
+  .SupportBtn button {
+    margin: 10px 0; /* Adjust margin between buttons on mobile devices */
+  }
+  
+
+}
