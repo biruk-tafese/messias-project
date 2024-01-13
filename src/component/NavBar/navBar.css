@@ -1,39 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-<<<<<<< HEAD
-}
-
-.active{
-    background-color: blue;
-}
-
-.nav{
-    background-color: #1d5173;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 20px 80px;
-    position: sticky;
-    top: 0;
-}
-
-.logo{
-    margin-right: auto;
-    color: #fff;
-}
-.ul{
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-}
-.ul li{
-    display: block;
-    padding: 0 15px;
-=======
     box-sizing: border-box; /* Include padding and border in element's total width and height */
->>>>>>> 956953650a96188257cc3585fdcc7c5041ad23f8
 }
 
 .nav {
