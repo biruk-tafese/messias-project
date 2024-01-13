@@ -21,7 +21,7 @@ export default function Contact(){
    
     return(
         <>
-        <NavBar/>
+        
         <h1 className='title'>Contact with MESSIAS</h1>
          <div className='infocontainer'>
             <div className='address-info'>

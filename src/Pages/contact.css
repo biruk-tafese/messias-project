@@ -45,16 +45,20 @@ ul {
     padding-bottom: 7px;
     padding-top:15px;
     color: rgb(8, 62, 109);
+    font-size: 25px;
 }
 
 .ourAdd2 {
     padding-bottom: 5px;
     color: rgb(8, 62, 109);
+    font-size: 25px;
+    margin: 0;
 }
 .ourAdd3{
     padding-bottom: 7px;
     padding-top:15px;
     color: rgb(8, 62, 109);
+    font-size: 25px;
 }
 
 .contact-info {
@@ -63,12 +67,14 @@ ul {
     flex-direction: column;list-style: none; /* Remove default list styles */
     display: flex;
     flex-direction: column;
+    font-size: 25px;
 }
 
 .person-info {
     list-style: none; /* Remove default list styles */
     display: flex;
     flex-direction: column;
+
 }
 
 .contact-item {

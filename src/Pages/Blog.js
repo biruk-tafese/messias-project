@@ -1,7 +1,6 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import NavBar from '../component/NavBar/navBar';
 import blogs from './blogsData';
 import Footer from '../component/Footer/footer';
 
@@ -16,9 +15,7 @@ const truncateDescription = (text, maxLength) => {
 
 export default function BlogPage() {
   return (
-    <>
-
-      <NavBar />
+    <>  
       <div className='blogs-logo'>
         <h5 className='blogs'>Our Blogs</h5>
       </div>
