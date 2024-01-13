@@ -19,7 +19,6 @@ export default function Contact(){
    
     return(
         <>
-       
         <h1 className='title'>Contact with MESSIAS</h1>
          <div className='infocontainer'>
             <div className='address-info'>
