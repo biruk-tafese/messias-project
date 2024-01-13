@@ -1,8 +1,10 @@
 /* Blog.css */
 
 .parent {
-    display: flex;
-    margin-top: 90px;
+    margin-right: 90px;
+    margin-left: 90px;
+    margin-bottom: 60px;
+    margin-top: 60px;
     height: 400px;
   }
   
@@ -33,12 +35,13 @@
   
   .page-wrapper {
     margin-right: 50px;
-    width: 70%;
-    height: 50%;
+    width: 100%;
+    height: 100%;
   }
   
   .post-slider {
     /* border: 1px solid red; */
+    width: 100%;
     height: 100%;
     position: relative; /* Added position relative */
   }
@@ -47,8 +50,8 @@
     margin: 5px 0;
   }
   .slider-title{
-    padding-left: 400px;
-    padding-bottom: 10px;
+    padding-left: 500px;
+    padding-bottom: 30px;
   }
   .post-slider .post-wrapper {
     /* border: 1px solid red; */
@@ -64,7 +67,7 @@
     padding: 0 10px;
   }
   .slick-list{
-    height: 200px;
+    height: 250px;
   }
   .post-slider .post {
     background: blueviolet;

@@ -21,6 +21,7 @@
     "react-scripts": "^5.0.1",
     "react-slick": "^0.29.0",
     "react-smooth-slide-toggle": "^1.1.1",
+    "sass": "^1.69.7",
     "slick-carousel": "^1.8.1",
     "web-vitals": "^2.1.4"
   },
@@ -28,7 +29,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "build-sass": "node-sass src/styles -o dist/css"
   },
   "eslintConfig": {
     "extends": [
@@ -49,7 +51,6 @@
     ]
   },
   "devDependencies": {
-    "node-sass": "^7.0.3",
     "tailwindcss": "^3.4.0"
   }
 }

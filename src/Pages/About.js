@@ -1,7 +1,6 @@
 import { useEffect} from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import NavBar from '../component/NavBar/navBar';
 import missionImage from '../Images/Mission.jpg';
 import objectiveImage from '../Images/objective.jpg';
 import Footer from '../component/Footer/footer';
@@ -40,7 +39,7 @@ const AnimatedContent = ({ children }) => {
 const About = () => {
     return (
       <>
-        <NavBar />
+       
         <div className='container'>
           <div className='myblog' id='rational'>
           <AnimatedContent>
