@@ -1,27 +1,36 @@
-import {NavLink, Link } from 'react-router-dom';
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
+import './navBar.css';
 
-import './navBar.css'
+function NavBar() {
+    const [showNav, setShowNav] = useState(false);
 
-function NavBar(){
-    return(
+    const toggleNav = () => {
+        setShowNav(!showNav);
+    };
+
+    return (
         <>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
-            <nav className="nav">
-            <h2 className='logo'>Messia's Mission Ministry</h2>
-            <div className='menu'>
-                <i className="fa fa-bars"></i>
+            <div className={`nav`}>
+                <h2 className='logo'>Messia's Mission Ministry</h2>
+                <nav>
+                    <ul className={`ul ${showNav ? 'show' : ''}`}>
+                        <li><Link to='/'>Home</Link></li>
+                        <li><Link to='/ministry'>Ministry</Link></li>
+                        <li><Link to='/about'>About</Link></li>
+                        <li><Link to='/blog'>Blogs</Link></li>
+                        <li><Link to='/contact'>Contact Us</Link></li>
+                        <li><Link to='/donate'>Donate</Link></li>
+                    </ul>
+                    <button className="btn-collapse" onClick={toggleNav}>
+                        <FontAwesomeIcon icon={faBars} />
+                    </button>
+                </nav>
             </div>
-                 <ul className='ul'>
-                    <li><Link to='/'>Home</Link></li>
-                    <li><NavLink to='/ministry'>Ministry</NavLink></li>
-                    <li><NavLink to='/about'>About</NavLink></li>  
-                    <li><NavLink to='/blog'>Blogs</NavLink></li>
-                    <li><NavLink to='/contact'>Contact Us</NavLink></li>
-                    <li><NavLink to='/donate'>Donate</NavLink></li>
-                 </ul>
-            </nav>
         </>
     );
 }
 
-export default NavBar
+export default NavBar;

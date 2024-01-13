@@ -5,6 +5,7 @@ import { TbNetwork } from "react-icons/tb";
 import { IoPerson } from "react-icons/io5";
 import { GrLocationPin } from "react-icons/gr";
 import { useNavigate  } from 'react-router-dom';
+import Footer from '../component/Footer/footer';
 import './contact.css';
 
 
@@ -143,7 +144,7 @@ export default function Contact(){
          </form>
        </div>
 
-
+       <Footer />
             
         </>
     )

@@ -49,3 +49,43 @@
 .social{
     margin: 10px;
 }
+
+
+/* Common styles for all screen sizes */
+.conta {
+    flex-direction: column; /* Display in column layout for smaller screens */
+    height: auto;
+  }
+  
+  .disc, .address {
+    width: 100%; /* Full width for smaller screens */
+    margin: 0; /* Remove margin for full width */
+  }
+  
+  .disc h1 {
+    margin-left: 0; /* Adjust margin for smaller screens */
+  }
+  
+  /* Media query for larger screens (min-width: 850px) */
+  @media screen and (min-width: 850px) {
+    .conta {
+      flex-direction: row; /* Switch back to row layout for larger screens */
+    
+    }
+  
+    .disc, .address {
+      width: 40%; /* Adjust width for larger screens */
+      margin: 0; /* Add margin back for larger screens if needed */
+    }
+  
+    .disc h1 {
+      margin-left: 40px; /* Restore margin for larger screens */
+    }
+
+  }
+  
+  /* Additional styles for the icons to adjust size on smaller screens */
+  .icons {
+    font-size: 24px; /* Adjust icon size for smaller screens */
+  }
+  
