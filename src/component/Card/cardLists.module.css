@@ -1,21 +1,13 @@
-
-/* *{
-    box-sizing: border-box;
-    font-family: Poppins, sans-serif;
-} */
-
-.background{
-    background-color: white;
-}
-.cardContainer{
+/* Common styles for all screen sizes */
+.cardContainer {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 25px;
     width: 100%;
-    
 }
-.title{
+
+.title {
     margin-left: 550px;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -24,25 +16,21 @@
     line-height: 50px;
 }
 
-
-.home{
-    height: 90vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-size: cover;
-
+/* Media query for small screens (max-width: 849px) */
+@media screen and (max-width: 849px) {
+    .title {
+        margin-left: 20px; /* Adjust margin for smaller screens */
+    }
 }
 
-.welcome-text{
-    color: white;
-    font-weight: bold;
-}
-.h1{
-    margin-bottom: 15px;
-}
-.h3{
-    margin-left: 50px;
+/* Media query for medium screens (850px to 991px) */
+@media screen and (min-width: 850px) and (max-width: 991px) {
+    .title {
+        font-size: 30px; /* Adjust font size for medium screens */
+    }
 }
 
- 
+/* Media query for large screens (min-width: 992px) */
+@media screen and (min-width: 992px) {
+    /* Add styles specific to larger screens if needed */
+}

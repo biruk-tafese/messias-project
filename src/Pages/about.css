@@ -109,3 +109,49 @@ hr {
     background-color: #e0dddd; /* Background color for the card */
   
   }
+
+
+/* ... (existing styles) */
+
+/* Media query for mobile devices */
+@media (max-width: 767px) {
+  .right-content img,
+  .left-content img,
+  .right-content-2 img,
+  .left-content-2 img {
+    order: -1; /* Move the image to the top on mobile devices */
+    margin-bottom: 15px; /* Add bottom margin for better spacing on mobile devices */
+    width: 100%; /* Make sure images take full width on mobile devices */
+  }
+    /* Common styles for all screen sizes */
+
+/* ... (existing styles) */
+
+.title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column; /* Adjusted to a column layout for mobile devices */
+  align-items: center; /* Center content on mobile devices */
+  margin-top: 15px; /* Adjusted margin for better responsiveness */
+}
+
+.right-content,
+.left-content,
+.right-content-2,
+.left-content-2 {
+  margin-right: 0; /* Remove right margin for better spacing on mobile devices */
+}
+
+.right-content,
+.left-content,
+.right-content-2,
+.left-content-2 {
+  padding: 12px; /* Adjusted padding for better spacing on mobile devices */
+}
+
+
+}
