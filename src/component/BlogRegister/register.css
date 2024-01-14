@@ -70,7 +70,7 @@ input::placeholder {
   }
   
   .discription, .input {
-    width: 100%; /* Full width for smaller screens */
+    width: 80%; /* Full width for smaller screens */
     padding: 20px; /* Add padding for better spacing on smaller screens */
     height: 100%;
   }
