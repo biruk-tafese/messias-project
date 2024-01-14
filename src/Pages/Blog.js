@@ -18,7 +18,6 @@ export default function BlogPage() {
   return (
     <>
 
-      <NavBar />
       <div className='blogs-logo'>
         <h5 className='blogs'>Our Blogs</h5>
       </div>

@@ -10,6 +10,7 @@
     justify-content: space-between; /* Adjust for responsiveness */
     align-items: center;
     padding: 20px 10%; /* Adjust padding for responsiveness */
+    box-shadow: 10px 10px 10px 10px rgba(7, 17, 60, 0.1); /* Add box shadow */
 }
 
 .logo {

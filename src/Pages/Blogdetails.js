@@ -33,7 +33,6 @@ const Blogdetails = () => {
 
   return (
     <>
-      <NavBar />
       <div className="blog-details-container">
       <motion.div className="progress-bar" style={{ scaleX }} />
       <h2>{blog.title}</h2>
