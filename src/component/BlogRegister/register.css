@@ -10,7 +10,7 @@
 }
 
 .discription{
-    width: 55%;
+    width: 80%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -32,9 +32,10 @@
     line-height: 22px;
     color: white;
     letter-spacing: normal;
+    width: 100%;
 }
 .input {
-  width: 100%;
+  width: 40%;
   height: 100%; /* Set height to match the height of .contents */
   display: flex;
   flex-direction: row; /* Set to row for contents to be in a row */
@@ -70,15 +71,9 @@ input::placeholder {
     height: auto;
   }
   
-
-  .discription, .input {
-    width: 80%; /* Full width for smaller screens */
-    padding: 20px; /* Add padding for better spacing on smaller screens */
-    height: 100%;
-  }
   
   .input input, .input button {
-    width: 80%; /* Full width for input and button on smaller screens */
+    width: 60%; /* Full width for input and button on smaller screens */
   }
   
   /* Media query for larger screens (min-width: 850px) */
@@ -89,7 +84,7 @@ input::placeholder {
     }
    
     .description, .input {
-      width: 90%; /* Adjust width for larger screens */
+      width: 80%; /* Adjust width for larger screens */
       height: 100%;
     
     }
