@@ -84,7 +84,7 @@ input::placeholder {
     }
    
     .description, .input {
-      width: 80%; /* Adjust width for larger screens */
+      width: 90%; /* Adjust width for larger screens */
       height: 100%;
     
     }
