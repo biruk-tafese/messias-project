@@ -72,7 +72,9 @@
         top: 70px; /* Adjust the top position to avoid overlapping with the logo */
         left: 0;
         width: 100%;
+        height: auto;
     }
+
 
     .ul li {
         margin-right: 0;
@@ -81,6 +83,7 @@
     }
 
     .btn-collapse {
+
         display: block; /* Show the button on small screens */
     }
 }

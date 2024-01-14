@@ -47,7 +47,7 @@ hr {
 .right-content p,
 .left-content p {
   font-family: 'Romans', 'Georgia'; /* Font family for paragraphs */
-  font-size: 20px; /* Font size for paragraphs */
+  font-size: 15px; /* Font size for paragraphs */
   margin-top: 20px;
 }
 
@@ -97,7 +97,7 @@ hr {
 
   .right-content-2 p, .left-content-2 p {
     font-family: 'Romans', 'Georgia'; /* Font family for paragraphs */
-    font-size: 20px;
+    font-size: 15px;
     margin-top: 20px;
 
   }
@@ -111,6 +111,9 @@ hr {
   }
 
 
+  .footer {
+    margin-top: 50px;
+  }
 /* ... (existing styles) */
 
 /* Media query for mobile devices */
@@ -129,7 +132,9 @@ hr {
 
 .title {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  font-size: 15px;
+
 }
 
 .content-wrapper {
@@ -139,18 +144,13 @@ hr {
   margin-top: 15px; /* Adjusted margin for better responsiveness */
 }
 
-.right-content,
-.left-content,
-.right-content-2,
-.left-content-2 {
-  margin-right: 0; /* Remove right margin for better spacing on mobile devices */
-}
+
 
 .right-content,
+.left-content-2 
 .left-content,
-.right-content-2,
-.left-content-2 {
-  padding: 12px; /* Adjusted padding for better spacing on mobile devices */
+.right-content-2 {
+  padding: 10px; /* Adjusted padding for better spacing on mobile devices */
 }
 
 

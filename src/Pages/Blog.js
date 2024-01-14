@@ -15,7 +15,8 @@ const truncateDescription = (text, maxLength) => {
 
 export default function BlogPage() {
   return (
-    <>  
+    <>
+
       <div className='blogs-logo'>
         <h5 className='blogs'>Our Blogs</h5>
       </div>
@@ -33,7 +34,7 @@ export default function BlogPage() {
           </div>
         ))}
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

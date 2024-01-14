@@ -69,6 +69,7 @@ input::placeholder {
     height: auto;
   }
   
+
   .discription, .input {
     width: 80%; /* Full width for smaller screens */
     padding: 20px; /* Add padding for better spacing on smaller screens */
@@ -80,14 +81,17 @@ input::placeholder {
   }
   
   /* Media query for larger screens (min-width: 850px) */
-  @media screen and (min-width: 850px) {
+  @media (max-width: 950px) {
     .contents {
-      flex-direction: row; /* Switch back to row layout for larger screens */
+      flex-direction: column; /* Switch back to row layout for larger screens */
+      align-items: center;
     }
-  
-    .discription, .input {
-      width: 50%; /* Adjust width for larger screens */
+   
+    .description, .input {
+      width: 60%; /* Adjust width for larger screens */
       height: 100%;
+    
     }
   }
+
   
