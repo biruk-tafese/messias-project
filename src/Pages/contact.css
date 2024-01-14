@@ -271,7 +271,7 @@ button[type='submit']:hover {
   .infocontainer {
     grid-template-columns: repeat(1, 1fr); /* Display 1 column for mobile devices */
     margin: 10px;
-    padding-right: 20px;
+    padding-right: 10px;
   }
 
   .container-two {

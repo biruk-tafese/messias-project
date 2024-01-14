@@ -8,7 +8,6 @@ import Ministry from './Pages/Ministries';
 import Donate from './Pages/Donate';
 
 import Blogdetails from './Pages/Blogdetails';
-import NavBar from './component/NavBar/navBar';
 
 
 function App() {

@@ -24,7 +24,7 @@
 /* Media query for small screens (max-width: 849px) */
 @media screen and (max-width: 849px) {
     .home {
-        height: 70vh;
+        height: 60vh;
     }
 
     .welcome-text {
