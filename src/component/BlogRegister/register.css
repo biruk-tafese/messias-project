@@ -41,15 +41,16 @@
   justify-content: center;
   align-items: center;
   padding: 20px; /* Adjust padding as needed */
+  margin-left: 20px;
 } 
 .input input{
-    width: 70%;
-    height: 60px;
+    width: 40%;
+    height: 50px;
 
 }
 .input button{
-    width: 40%;
-    height: 60px;
+    width: 20%;
+    height: 50px;
     background-color: #1d5173;
     color: white;
     font-size: 15px;
@@ -88,7 +89,7 @@ input::placeholder {
     }
    
     .description, .input {
-      width: 60%; /* Adjust width for larger screens */
+      width: 90%; /* Adjust width for larger screens */
       height: 100%;
     
     }

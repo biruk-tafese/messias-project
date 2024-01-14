@@ -2,7 +2,7 @@
 
 
 .conta {
-  height: 400px;
+  height: 350px;
   width: 100%;
   background-color: #c2c6c8;
   display: flex;
@@ -19,9 +19,9 @@
 }
 .disc h1{
     margin-bottom: 5px;
-    margin-left: 20px;
+    margin-left: 0px;
     width: 400px;
-    
+    padding-top: 80px;
 }
 
 .address{
