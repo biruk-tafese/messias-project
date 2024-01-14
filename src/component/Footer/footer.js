@@ -9,13 +9,8 @@ export default function Footer(){
         <div className="conta">
                 <div className="disc">
                     <h1>Messia's Mission Ministry Ethiopia</h1>
-                    <p>Our mission is to spread the good news of salvation based
-                        on Grafted In Theology (GIT) to Jews and to the Nations
-                        (Rom.1:16, 11:17-24, Eph.2:11-20)
-                    </p>
-                    
                 </div>
-        
+      
                 <div className="address">
                 <div className='contact-info'>
               <ul>

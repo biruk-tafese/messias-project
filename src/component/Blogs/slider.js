@@ -17,16 +17,25 @@ export default function SimpleSlider() {
     dots: true,
     infinite: true,
     speed: 500,
+    slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
+    responsive: [
+      {
+        breakpoint: 850, // Adjust this breakpoint as needed
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   };
 
   return (
     <Slider {...settings}>
       {blogs.blogList.map(blog => (
         <div key={blog.id} className="card" onClick={() => handleSlideClick(blog.id)}>
-          <h3>{blog.title}</h3>
+          <h5>{blog.title}</h5>
         </div>
       ))}
     </Slider>

@@ -1,6 +1,7 @@
 
 
 
+<<<<<<< HEAD
 .conta {
   height: 400px;
   width: 100%;
@@ -10,39 +11,50 @@
   flex-direction: row;
   border: 1px solid #ccc; /* Add border */
   box-shadow: 0px 0px 10px 10px rgba(7, 17, 60, 0.1); /* Add box shadow */
+=======
+.conta{
+
+    width: 100%;
+    height: 300px;
+    background-color: #e3e3e3;
+    display: flex;
+>>>>>>> f42c32305deb559eff440e08263b173846912b5e
 }
 
 
 .disc{
+<<<<<<< HEAD
+=======
+    width: 20%;
+    margin-right: 30px;
+    margin-left: 0px;
+>>>>>>> f42c32305deb559eff440e08263b173846912b5e
     
     padding-bottom: 50px;
     margin-bottom:40px;
 }
 .disc h1{
     margin-bottom: 5px;
-    margin-left: 40px;
-    width: 250px;
-    text-indent: 10px;
+    margin-left: 20px;
+    width: 400px;
     
-}
-.disc p{
-    margin-top: 30px;
-    width: 100%;
-    text-indent: 10px;
-    font-size: 20px;
 }
 
 .address{
-    width: 40%;
-    margin-left: 30px;
-    text-indent: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 40%;
+  margin-left: 30px;
+  text-indent: 20px;
+  margin: 60px;
 }
-.address p{
+/* .address p{
     margin-bottom: 30px;
 }
 .address h3{
     margin-bottom: 30px;
-}
+} */
 
 .socials{
     padding-bottom:200px;
@@ -51,12 +63,6 @@
     margin: 10px;
 }
 
-
-/* Common styles for all screen sizes */
-.conta {
-    flex-direction: column; /* Display in column layout for smaller screens */
-    height: auto;
-  }
   
   .disc, .address {
     width: 100%; /* Full width for smaller screens */

@@ -1,9 +1,11 @@
+import NavBar from '../component/NavBar/navBar';
 import { BsMailboxFlag, BsFillTelephoneFill} from "react-icons/bs";
 import { MdOutlineMail } from "react-icons/md";
 import { TbNetwork } from "react-icons/tb";
 import { IoPerson } from "react-icons/io5";
 import { GrLocationPin } from "react-icons/gr";
 import { useNavigate  } from 'react-router-dom';
+import Footer from '../component/Footer/footer';
 import './contact.css';
 
 
@@ -19,7 +21,7 @@ export default function Contact(){
    
     return(
         <>
-       
+        
         <h1 className='title'>Contact with MESSIAS</h1>
          <div className='infocontainer'>
             <div className='address-info'>
@@ -142,7 +144,7 @@ export default function Contact(){
          </form>
        </div>
 
-
+       <Footer />
             
         </>
     )
