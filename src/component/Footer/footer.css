@@ -1,19 +1,21 @@
 
 
 
-.conta{
-
-    width: 100%;
-    height: 300px;
-    background-color: #e3e3e3;
-    display: flex;
+.conta {
+  height: 400px;
+  width: 100%;
+  background-color: #c2c6c8;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  border: 1px solid #ccc; /* Add border */
 }
 
+
 .disc{
-    width: 20%;
-    margin-right: 30px;
-    margin-left: 0px;
     
+    padding-bottom: 50px;
+    margin-bottom:40px;
 }
 .disc h1{
     margin-bottom: 5px;
@@ -56,19 +58,22 @@
   }
   
   /* Media query for larger screens (min-width: 850px) */
-  @media screen and (min-width: 850px) {
+  @media screen and (max-width: 950px) {
     .conta {
-      flex-direction: row; /* Switch back to row layout for larger screens */
-    
+      width: 100%;
+      flex-direction: column; /* Switch back to row layout for larger screens */
     }
   
     .disc, .address {
-      width: 40%; /* Adjust width for larger screens */
-      margin: 0; /* Add margin back for larger screens if needed */
+      width: 70%; /* Adjust width for larger screens */
+      margin-top: 30px; /* Add margin back for larger screens if needed */
+      margin-bottom: 30px;
+      padding: 0;
     }
   
     .disc h1 {
-      margin-left: 40px; /* Restore margin for larger screens */
+      font-size: 26px;
+      padding-left: 10px;
     }
 
   }
