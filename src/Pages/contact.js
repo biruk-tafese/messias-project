@@ -6,7 +6,7 @@ import { IoPerson } from "react-icons/io5";
 import { GrLocationPin } from "react-icons/gr";
 import { useNavigate  } from 'react-router-dom';
 import Footer from '../component/Footer/footer';
-import './contact.css';
+import './Contact.css';
 
 
 
