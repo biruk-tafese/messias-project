@@ -2,7 +2,7 @@
 
 
 .conta {
-  height: 400px;
+  height: 350px;
   width: 100%;
   background-color: #c2c6c8;
   display: flex;
@@ -21,9 +21,9 @@
 }
 .disc h1{
     margin-bottom: 5px;
-    margin-left: 20px;
+    margin-left: 0px;
     width: 400px;
-    
+    padding-top: 80px;
 }
 
 .address{
@@ -35,12 +35,7 @@
   text-indent: 20px;
   margin: 60px;
 }
-/* .address p{
-    margin-bottom: 30px;
-}
-.address h3{
-    margin-bottom: 30px;
-} */
+
 
 .socials{
     padding-bottom:200px;
@@ -53,10 +48,6 @@
   .disc, .address {
     width: 100%; /* Full width for smaller screens */
     margin: 0; /* Remove margin for full width */
-  }
-  
-  .disc h1 {
-    margin-left: 0; /* Adjust margin for smaller screens */
   }
   
   /* Media query for larger screens (min-width: 850px) */
@@ -75,8 +66,13 @@
   
     .disc h1 {
       font-size: 26px;
+
       padding: 5px;
       font-size: 25px;
+
+
+      padding-left: 10px;
+      width: 350px;
 
     }
 
