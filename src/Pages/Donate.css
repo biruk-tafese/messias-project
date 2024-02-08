@@ -1,0 +1,187 @@
+/* Common styles for all screen sizes */
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.Top-header {
+    text-align: center;
+}
+
+.Top-header h1 {
+    padding: 40px;
+    font-size: 40px;
+    color: rgb(158, 28, 28);
+    font-weight: bolder;
+}
+
+.Top-header p {
+    margin-left: 15px;
+    margin-right: 15px;
+    letter-spacing: 1px;
+    font-size: 17px;
+    text-align: left;
+}
+
+.middle-header {
+    margin-top: 50px;
+    background-color: rgb(224, 226, 227);
+    height: auto;
+}
+
+.middle-header div {
+    width: 40%;
+    padding-top: 40px;
+}
+
+.left-type {
+    float: left;
+    display: block;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.left-type button {
+    background-color: rgb(188, 14, 23);
+    margin-top: 30px;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.left-type button:hover {
+    border-radius: 7px;
+    box-shadow: inset;
+    background-color: rgb(173, 14, 14);
+    cursor: pointer;
+}
+
+.right-type {
+    float: right;
+    width: 45%;
+    text-align: center;
+}
+
+.right-type h1 {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.right-type p {
+    padding-top: 3px;
+}
+
+.inside-ethiopia {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.inside-ethiopia h1 {
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.transactions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.transactions div {
+    width: 45%;
+    height: 90%;
+    margin-bottom: 20px;
+}
+
+.transactions > div > img {
+    width: 80%;
+    height: 100%;
+}
+
+.areas-giving {
+    text-align: center;
+    color: white;
+    background-image: linear-gradient(to right, rgb(72, 0, 255), rgb(198, 14, 41));
+}
+
+.areas-giving h1 {
+    margin-bottom: 30px;
+    padding-top: 20px;
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 30px;
+}
+
+.icons {
+    height: 50px;
+    width: 30px;
+    color: white;
+}
+
+.services div {
+    width: 45%;
+    margin-bottom: 20px;
+}
+
+.services h1 {
+    padding: 10px;
+}
+
+/* Media queries for responsive design */
+
+@media only screen and (max-width: 1024px) {
+    .middle-header div {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .middle-header div {
+        width: 100%;
+    }
+
+    .transactions div,
+    .services div {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .Top-header h1 {
+        font-size: 30px;
+        padding: 20px;
+    }
+
+    .Top-header p {
+        font-size: 15px;
+    }
+
+    .middle-header {
+        height: auto;
+    }
+
+    .left-type button {
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    .right-type h1 {
+        font-size: 20px;
+    }
+
+    .inside-ethiopia h1 {
+        font-size: 25px;
+    }
+}
