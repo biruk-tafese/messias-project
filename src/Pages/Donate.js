@@ -25,7 +25,7 @@ import Footer  from "../component/Footer/footer";
      
      const navigateToForeignAids = () => {
         
-        navigate('/foreignDonations');
+        navigate('/DonationForm');
      }
 
     return(

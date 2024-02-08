@@ -31,7 +31,7 @@ body {
 }
 
 .middle-header div {
-    width: 40%;
+    width: 80%;
     padding-top: 40px;
 }
 
@@ -119,9 +119,9 @@ body {
 .services {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     height: 100%;
-    width: 100%;
+    width: 97%;
     align-items: center;
     margin-left: 10px;
     margin-right: 10px;
@@ -141,4 +141,144 @@ body {
 
 .services h1 {
     padding: 10px;
+}
+
+@media (max-width: 700px) {
+    .Top-header {
+        width: 95%;
+        margin-bottom: 10px;
+    }
+
+    .Top-header h1 {
+        text-align: center;
+    }
+
+    .Top-header p {
+        text-align: center;
+        font-size: 19px;
+    }
+
+    .middle-header {
+        display: flex;
+        flex-direction: column;
+        height: auto; /* Let height be determined by content */
+        width: 100%;
+        align-items: center;
+    }
+
+    .left-type,
+    .right-type {
+        width:100px; /* Set width to 80% for small devices */
+        float: left; /* Remove float for better responsiveness */
+        
+    }
+    .areas-giving {
+        text-align: center;
+        color: white;
+        background-image: linear-gradient(to right, rgb(72, 0, 255), rgb(198, 14, 41));
+    }
+
+    .transactions {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* flex-wrap: wrap; Ensure items wrap to next line */
+        justify-content: center; /* Center items horizontally */
+    }
+
+    .transactions div {
+        width: 75%; /* Adjust width for smaller screens */
+        margin: 5px; /* Add some space between items */
+    }
+
+    .transactions > div > img {
+        width: 100%; /* Make images fill the container */
+    }
+
+    .services {
+        flex-wrap: wrap; /* Ensure items wrap to next line */
+        justify-content: center; /* Center items horizontally */
+        padding-bottom: 10px; /* Adjust spacing */
+    }
+
+    .services div {
+        width: 90%; /* Adjust width for smaller screens */
+        margin: 5px; /* Add some space between items */
+        padding-top: 30px;
+    }
+
+    .services h1 {
+        font-size: 18px; /* Adjust font size for smaller screens */
+        font-weight: bolder;
+    }
+}
+
+@media (max-width: 900px) {
+    .Top-header {
+        width: 95%;
+        margin-bottom: 10px;
+    }
+
+    .Top-header h1 {
+        text-align: center;
+    }
+
+    .Top-header p {
+        text-align: center;
+        font-size: 19px;
+    }
+
+    .middle-header {
+        display: flex;
+        flex-direction: column;
+        height: auto; /* Let height be determined by content */
+        width: auto;
+        align-items: center;
+    }
+
+    .left-type,
+    .right-type {
+        width: 100%; /* Set width to 100% for medium devices */
+        float: none; /* Remove float for better responsiveness */
+        margin: 0 auto; /* Center the elements */
+    }
+
+    .areas-giving {
+        text-align: center;
+        color: white;
+        background-image: linear-gradient(to right, rgb(72, 0, 255), rgb(198, 14, 41));
+    }
+
+    .transactions {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; /* Center items horizontally */
+    }
+
+    .transactions div {
+        width: 75%; /* Adjust width for smaller screens */
+        margin: 5px; /* Add some space between items */
+    }
+
+    .transactions > div > img {
+        width: 100%; /* Make images fill the container */
+    }
+
+    .services {
+        flex-wrap: wrap; /* Ensure items wrap to next line */
+        justify-content: center; /* Center items horizontally */
+        padding-bottom: 10px; /* Adjust spacing */
+    }
+
+    .services div {
+        width: 90%; /* Adjust width for smaller screens */
+        margin: 5px; /* Add some space between items */
+        padding-top: 30px;
+    }
+
+    .services h1 {
+        font-size: 18px; /* Adjust font size for smaller screens */
+        font-weight: bolder;
+    }
 }
