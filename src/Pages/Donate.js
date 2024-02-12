@@ -10,7 +10,7 @@ import { GiGiftOfKnowledge } from "react-icons/gi";
 import { FaPeopleRoof } from "react-icons/fa6";
 import { BsGlobe } from "react-icons/bs";
 import { LuChurch } from "react-icons/lu";
-
+import AnimatedContent from "./AnimatedContent";
 import Footer  from "../component/Footer/footer";
 
 
@@ -33,6 +33,7 @@ import Footer  from "../component/Footer/footer";
         {/* <NavBar/> */}
          
          <div className="Top-header">
+           <AnimatedContent>
              <h1>Give to Messia's</h1>
              <p>
              Messias is primarily a donor-supported organization that 
@@ -44,9 +45,12 @@ import Footer  from "../component/Footer/footer";
               in a trustworthy manner in keeping with our core values. We will 
               readily make organizational and/or staff financial reports available 
               as requested. Financial integrity is of utmost importance to us.</p>
+            </AnimatedContent>
          </div>
+         <AnimatedContent>
 
          <div className="middle-header">
+         
              <div className="left-type">
                 <h3> 
                    If you would like to give to Messias from outside Ethiopia, use this  Formate.
@@ -62,7 +66,8 @@ import Footer  from "../component/Footer/footer";
                  <p>Culver City, CA,90232</p>
              </div>
          </div>
-
+         </AnimatedContent>
+        <AnimatedContent>
          <div className="inside-ethiopia">
             <h1>Gift from Inside Ethiopia</h1>
            <div className="transactions">
@@ -88,8 +93,10 @@ import Footer  from "../component/Footer/footer";
             </div> 
            </div>
          </div>
+        </AnimatedContent>
 
          <div className="areas-giving">
+         <AnimatedContent>
             <h1>Areas of Giving </h1>
              
              <div className="services">
@@ -120,7 +127,7 @@ import Footer  from "../component/Footer/footer";
                      <p>Investing for the future Messias Capital Investment.​</p>
                 </div>
              </div>
-
+             </AnimatedContent>
          </div>
 
          <Footer />

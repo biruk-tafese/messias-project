@@ -1,5 +1,6 @@
 import CardList from './CardListes'
 import classes from './cardLists.module.css'
+import AnimatedContent from '../../Pages/AnimatedContent'
 
 const Dummy_data = [
 
@@ -22,9 +23,12 @@ const Dummy_data = [
 
 function Card(){
     return(
+         
         <div>
+              <AnimatedContent>
             <h1 className={classes.title}>Who we are</h1>
                <CardList datas = {Dummy_data}/>
+               </AnimatedContent>
            </div>
     
         

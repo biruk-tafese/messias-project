@@ -1,40 +1,10 @@
-import { useEffect} from 'react';
-import { motion, useAnimation } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
+
 import missionImage from '../Images/Mission.jpg';
 import objectiveImage from '../Images/objective.jpg';
 import Footer from '../component/Footer/footer';
 import './about.css';
+import AnimatedContent from "./AnimatedContent";
 
-
-
-const AnimatedContent = ({ children }) => {
-    const controls = useAnimation(); // Initialize controls using useAnimation
-    const [ref, inView] = useInView({
-      triggerOnce: true,
-      rootMargin: '-100px 10px',
-    });
-  
-    useEffect(() => {
-      if (inView) {
-        controls.start('visible');
-      }
-    }, [controls, inView]);
-  
-
-  return (
-    <motion.div
-      ref={ref}
-      initial={{ opacity: 0, y: 50 }}
-      animate={controls}
-      transition={{ duration: 0.8 }}
-      variants={{
-        visible: { opacity: 1, y: 0 },
-      }} >
-      {children}
-    </motion.div>
-  );
-};
 
 const About = () => {
     return (

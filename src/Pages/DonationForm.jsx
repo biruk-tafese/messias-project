@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import "./DonationForm.css";
 import Footer from '../component/Footer/footer';
+import AnimatedContent from './AnimatedContent';
+
 const DonationForm = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
@@ -56,6 +58,7 @@ const DonationForm = () => {
 
     return (
         <>
+         <AnimatedContent>
         <div className="donation-form-container">
             <h2 className="form-title">Make a Donation</h2>
             <form onSubmit={handleSubmit} className="form">
@@ -165,8 +168,11 @@ const DonationForm = () => {
                 <button type="submit" className="submit-button">Submit Donation</button>
             </form>
         </div>
+        </AnimatedContent>
+
         <Footer />
         </>
+        
     );
     
 };

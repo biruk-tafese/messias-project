@@ -1,8 +1,10 @@
 import './home.css'
+import AnimatedContent  from '../../Pages/AnimatedContent'
 
 function Home(){
     return(
         <>
+        <AnimatedContent>
         <div className="home">
             <div className='welcome-text'>
                 <h1 className='h1'>Messia's Mission Ministry Ethiopia</h1>
@@ -10,7 +12,7 @@ function Home(){
             </div>
           
         </div>
-
+        </AnimatedContent>
         </>
     )
 }

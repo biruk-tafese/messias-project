@@ -3,6 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import blogs from './blogsData';
 import Footer from '../component/Footer/footer';
+import AnimatedContent  from './AnimatedContent';
 
 import './blogs.css';
 
@@ -16,10 +17,13 @@ const truncateDescription = (text, maxLength) => {
 export default function BlogPage() {
   return (
     <>
-
+      
       <div className='blogs-logo'>
+      <AnimatedContent>
         <h5 className='blogs'>Our Blogs</h5>
+        </AnimatedContent>
       </div>
+       <AnimatedContent>
       <div className='card-row'>
         {blogs.blogList.map((blog) => (
           <div className='card-container' key={blog.id}>
@@ -34,6 +38,7 @@ export default function BlogPage() {
           </div>
         ))}
       </div>
+      </AnimatedContent>
       {/* <Footer /> */}
     </>
   );

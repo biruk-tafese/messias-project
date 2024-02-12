@@ -7,7 +7,7 @@ import { GrLocationPin } from "react-icons/gr";
 import { useNavigate  } from 'react-router-dom';
 import Footer from '../component/Footer/footer';
 import './contact.css';
-
+import AnimatedContent from "./AnimatedContent";
 
 
 export default function Contact(){
@@ -21,8 +21,11 @@ export default function Contact(){
    
     return(
         <>
+        <AnimatedContent>
         <h1 className='title'>Contact with MESSIAS</h1>
+        </AnimatedContent>
          <div className='infocontainer'>
+          <AnimatedContent>
             <div className='address-info'>
                   <ul>
                      <lu><h2 className='ourAdd1'>Our address</h2></lu>
@@ -35,7 +38,9 @@ export default function Contact(){
                      <li>Sa-Sun Closed</li>
                   </ul>
             </div>
+             </AnimatedContent>
           <div className='contact-info'>
+           <AnimatedContent>
             <ul>
              <h2 className='ourAdd3'>Contact Info</h2>
              <li className="contact-item">
@@ -57,8 +62,10 @@ export default function Contact(){
                    </div>
                 </li>
             </ul>
+            </AnimatedContent>
         </div>  
             <div className='person-info'>
+            <AnimatedContent>
                  <ul>
                      <h2 className='ourAdd3'>Messia's Is Represented In The USA, With Its Messias Alumni</h2>
                      <li>Non-Profit Organization</li>
@@ -71,9 +78,11 @@ export default function Contact(){
                      </li>
                        
                   </ul>
+               </AnimatedContent>
             </div>
 
             <div className='contact-info'>
+             <AnimatedContent>
             <ul>
              <h2 className='ourAdd3'>Contact Person</h2>
              <li className="contact-item">
@@ -107,12 +116,13 @@ export default function Contact(){
                    </div>
                 </li>
             </ul>
+            </AnimatedContent>
         </div>  
          </div>  
         
         
           {/* Section two of the page  */}
-          
+           <AnimatedContent>
 
            <div className='container-two'>
                  <h1>Support Messias</h1>
@@ -121,9 +131,10 @@ export default function Contact(){
 
                  </div>
            </div>
-
+           </AnimatedContent>
 
             {/* Section Three of the page  */}
+            <AnimatedContent>
 
             <div class='container-three'>
               <h1 class='titleContact'>Contact Us</h1>
@@ -142,7 +153,7 @@ export default function Contact(){
             <button type='submit'>Submit</button>
          </form>
        </div>
-
+       </AnimatedContent>
        <Footer />
             
         </>
