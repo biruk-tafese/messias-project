@@ -27,6 +27,8 @@ body {
     margin-top: 50px;
     background-color: rgb(224, 226, 227);
     height: 250px;
+    display: flex;
+    flex-direction: row;
 
 }
 
@@ -37,7 +39,6 @@ body {
 
 .left-type {
     float: left;
-    display: block;
     padding-top: 10px;
     padding-left: 20px;
 }
@@ -50,7 +51,7 @@ body {
     color: white;
     border: none;
     border-radius: 5px;
-    width: 100%;
+    width: 80%;
 }
 
 .left-type button:hover {
@@ -143,9 +144,10 @@ body {
     padding: 10px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 600px) {
     .Top-header {
         width: 95%;
+        height: auto;
         margin-bottom: 10px;
     }
 
@@ -159,17 +161,18 @@ body {
     }
 
     .middle-header {
-        display: flex;
+         display: flex;
         flex-direction: column;
-        height: auto; /* Let height be determined by content */
+        height: auto; 
         width: 100%;
-        align-items: center;
+        align-items: center; 
     }
 
     .left-type,
     .right-type {
         width:100px; /* Set width to 80% for small devices */
-        float: left; /* Remove float for better responsiveness */
+        height: auto;
+        padding-bottom: 20px;
         
     }
     .areas-giving {
@@ -213,7 +216,7 @@ body {
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 628px) {
     .Top-header {
         width: 95%;
         margin-bottom: 10px;

@@ -3,7 +3,7 @@ import NavBar from './component/NavBar/navBar';
 import HomePage from './Pages/Home';
 import About from './Pages/About';
 import BlogPage from './Pages/Blog';
-import Contact from './Pages/Contact';
+import Contact from './Pages/contact';
 import Ministry from './Pages/Ministries';
 import Donate from './Pages/Donate';
 

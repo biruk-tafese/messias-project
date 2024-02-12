@@ -1,4 +1,4 @@
-import NavBar from '../component/NavBar/navBar';
+// import NavBar from '../component/NavBar/navBar';
 import { BsMailboxFlag, BsFillTelephoneFill} from "react-icons/bs";
 import { MdOutlineMail } from "react-icons/md";
 import { TbNetwork } from "react-icons/tb";
