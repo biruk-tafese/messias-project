@@ -101,4 +101,4 @@ const blogs = {
     ]
 };
 
-export default blogs;
+export default blogimg;

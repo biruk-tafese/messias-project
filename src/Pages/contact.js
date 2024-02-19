@@ -1,4 +1,8 @@
 // import NavBar from '../component/NavBar/navBar';
+import { useRef, useState } from "react";
+import emailjs from '@emailjs/browser';
+
+
 import { BsMailboxFlag, BsFillTelephoneFill} from "react-icons/bs";
 import { MdOutlineMail } from "react-icons/md";
 import { TbNetwork } from "react-icons/tb";
@@ -10,14 +14,56 @@ import './contact.css';
 import AnimatedContent from "./AnimatedContent";
 
 
+
 export default function Contact(){
 
    const navigate = useNavigate ();
+   const form = useRef();
+   const [fname, setFname] = useState();
+   const [surename, setSurename] = useState();
+   const [email, setEmail] = useState();
+   const [phone, setPhone] = useState();
+   const [comment, setComment] = useState();
+
 
    const handleReadMoreClick = () => {
        // Navigate to the "/another-page" route
        navigate('/Donate');
      };
+      
+     const handleSubmit = (e) => {
+      e.preventDefault();
+      // Here you can submit the comment data to your backend or perform any other action
+      // For demonstration, we'll just show a confirmation pop-up
+      try {
+          const confirmation = window.confirm(`${fname} ${surename} comment has been submitted!`);
+      if (confirmation) {
+          //Send Email after completion
+          emailjs.sendForm('service_hn9eulu', 'template_pq3ydtf', form.current, '5tbTxztxOQAJA33aB', {
+              to_name: "Messiah",
+              from_name: `${fname} ${surename}`,
+              message: `${comment}`,
+              
+              })
+  .then((result) => {
+      window.alert(`Email sent successfully`);
+  })
+  .catch((error) => {
+      window.alert(`Something went wrong!`);
+  });
+
+
+          // Clear form fields after submission
+          setFname('');
+          setEmail('');
+          setComment('');
+          setSurename('');
+          setPhone('');
+      }
+      } catch(e) {
+          alert(`${e}`)
+      }
+  };
    
     return(
         <>
@@ -138,17 +184,54 @@ export default function Contact(){
 
             <div class='container-three'>
               <h1 class='titleContact'>Contact Us</h1>
-           <form class='contact-form'>
+           <form ref = {form} class='contact-form' onSubmit={handleSubmit}>
              <div class='input-fields'>
                <div class='names'>
-                 <input class='fname' placeholder='First Name' required/>
-                 <input class='lname' placeholder='Last Name' required/>
+                 <input 
+                    class='fname' 
+                    placeholder='First Name' 
+                    name='fname'
+                    value={fname}
+                    onChange={(e)=> setFname(e.target.value)}
+                    required/>
+                 <input
+                 class='surename' 
+                 placeholder='Last Name' 
+                 name='surename'
+                 value={surename}
+                 onChange={(e)=>{setSurename(e.target.value)}}
+                 required/>
              </div>
               <div class='email-phone'>
-                 <input class='email' type='email' placeholder='Email' required/>
-                 <input class='phoneNum' type='tel' placeholder='Phone Number'/>
+              <input
+                        id="email"
+                        placeholder="Email *"
+                        name="email"
+                        type="email"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                        required
+                    />
+                 <input 
+                  class='phoneNum'
+                  type='tel' 
+                  placeholder='Phone Number'
+                  name="phone"
+                  value={phone}
+                  onChange={(e)=>{setPhone(e.target.value)}}
+
+                  />
               </div>
-               <textarea placeholder='Your message'></textarea>
+               <textarea 
+                 placeholder='Your message'
+                 id="message"
+                 name="comment"
+                 col= '45'
+                 rows={8}
+                 maxLength={65525}
+                 value={comment}
+                 onChange={(e)=>{setComment(e.target.value)}}
+                 ></textarea>
             </div>
             <button type='submit'>Submit</button>
          </form>
