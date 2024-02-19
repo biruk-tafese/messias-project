@@ -3,11 +3,12 @@ import NavBar from './component/NavBar/navBar';
 import HomePage from './Pages/Home';
 import About from './Pages/About';
 import BlogPage from './Pages/Blog';
-import Contact from './Pages/Contact';
+import Contact from './Pages/contact';
 import Ministry from './Pages/Ministries';
 import Donate from './Pages/Donate';
 
 import Blogdetails from './Pages/Blogdetails';
+import DonationForm from './Pages/DonationForm';
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
 
      <Route path='/donate' element={<Donate/>}/>
      <Route path='/Blogdetails/:blogId' element={<Blogdetails />} />
+     <Route path='/DonationForm' element={<DonationForm />} />
 
 
      </Routes>

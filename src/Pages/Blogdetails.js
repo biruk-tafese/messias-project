@@ -2,11 +2,10 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import blogs from './blogsData';
-import NavBar from '../component/NavBar/navBar';
 import './Blogdetails.css'; 
 import { motion, useScroll, useSpring } from "framer-motion";
 import Footer from "../component/Footer/footer";
-
+import Comment from "../component/comment/comment";
 
 const Blogdetails = () => {
 
@@ -42,6 +41,8 @@ const Blogdetails = () => {
       <div className="blog-details-content">{paragraphs}</div>
       <p className="blog-author">Written by {blog.author} | Updated on {blog.dateUpdated}</p>
     </div>
+
+       <Comment />
        <Footer />
     </>
   );

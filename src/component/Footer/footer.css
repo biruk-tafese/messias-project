@@ -15,7 +15,9 @@
 .disc{
     
     padding-bottom: 50px;
-    margin-bottom:40px;
+    padding-top:60px;
+    text-align: center;
+    width: 100%;
 }
 .disc h1{
     margin-bottom: 5px;
@@ -53,19 +55,28 @@
     .conta {
       width: 100%;
       flex-direction: column; /* Switch back to row layout for larger screens */
-    }
+      height: auto;    
+      align-items: center;
+}
   
-    .disc, .address {
-      width: 70%; /* Adjust width for larger screens */
+    .disc h1, .address {
+      width: 80%; /* Adjust width for larger screens */
       margin-top: 30px; /* Add margin back for larger screens if needed */
       margin-bottom: 30px;
       padding: 0;
+      text-align: center;
     }
   
     .disc h1 {
       font-size: 26px;
+
+      padding: 5px;
+      font-size: 25px;
+
+
       padding-left: 10px;
       width: 350px;
+
     }
 
   }

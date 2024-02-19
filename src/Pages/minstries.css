@@ -1,0 +1,89 @@
+.Top-title {
+    background-image: url('../Images/jewChristianMinistries.png');
+    font-size: 20px;
+    height: 50vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    border-bottom: 4px solid black;
+}
+
+.Top-title h1 {
+    text-align: center;
+    padding: 10%;
+}
+
+.Top-title > h1 > span{
+    color: #ffffff;
+    font-size: 60px;
+    background-color: rgba(0, 0, 0, 0.8);    
+    opacity: 0.8;
+}
+
+  .ministry-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.top-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.top-title h1 {
+    font-size: 36px;
+    color: #333;
+}
+
+.ministry-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.ministry-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.1);
+}
+
+.ministry-item img {
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+}
+
+.ministry-description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    transition: 0.3s ease;
+    opacity: 0;
+}
+
+.ministry-item:hover .ministry-description {
+    opacity: 1;
+}
+
+.ministry-description h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.ministry-description p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 0;
+}
+
+@media (max-width: 655) {
+/* 
+   .Top-title {
+   }  */
+}

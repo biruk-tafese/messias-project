@@ -1,10 +1,12 @@
 // Blog.js
 import SimpleSlider from './slider'; // Assuming your file is named Slider.js
 import './blog.css';
+import AnimatedContent from '../../Pages/AnimatedContent';
 
 function Blog() {
   return (
     <>
+       <AnimatedContent>
       <div className="parent">
         <div className="page-wrapper">
           <div className='post-slider'>
@@ -15,6 +17,7 @@ function Blog() {
           </div>
         </div>
       </div>
+      </AnimatedContent>
     </>
   );
 }
