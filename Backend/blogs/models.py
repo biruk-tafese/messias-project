@@ -1,9 +1,10 @@
 from django.db import models
+from ckeditor.fields import RichTextField
 
 class Post(models.Model):
     id = models.AutoField(primary_key=True)
     title = models.CharField(max_length=100)
-    content = models.TextField()
+    content = RichTextField()
     date = models.DateField()
     author = models.CharField(max_length=255)
 
