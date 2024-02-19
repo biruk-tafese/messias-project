@@ -1,18 +1,37 @@
-import React from "react";
+import React , {useEffect , useState}from "react";
 import Slider from "react-slick";
 import { useNavigate } from "react-router-dom";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import blogs from "../../Pages/blogsData";
-
 export default function SimpleSlider() {
   const navigate = useNavigate();
+ 
+   const [blogs, setBlogs] = useState();
+   
+    useEffect(() => {
+     const fetchBlogs = async () => {
+       try {
+         const response = await fetch('http://127.0.0.1:8000/blogs/blogslist');
+         if (!response.ok) {
+           throw new Error('Failed to fetch blogs');
+         }
+         const data = await response.json();
+         setBlogs(data);
+         
+       } catch (error) {
+         console.error('Error fetching blogs:', error);
+       }
+     };
+   
+     fetchBlogs();
+   }, []);
 
   const handleSlideClick = (blogId) => {
     // Navigate to the blogdetails page with the corresponding blogId
     navigate(`/blogdetails/${blogId}`);
   };
 
+   
   const settings = {
     dots: true,
     infinite: true,

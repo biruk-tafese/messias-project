@@ -8,7 +8,7 @@ const fetchPostData = async () => {
 
 fetchPostData();
 
-const blogs = {
+const blogimg = {
     blogList: [
         {
             id: 1,
@@ -111,4 +111,4 @@ const blogs = {
     ]
 };
 
-export default blogs;
+export default blogimg;
