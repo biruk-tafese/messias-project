@@ -1,11 +1,13 @@
 import { BsMailboxFlag, BsFillTelephoneFill} from "react-icons/bs";
 import { MdOutlineMail } from "react-icons/md";
 import './footer.css'
+import Register from "../BlogRegister/register";
 
 export default function Footer(){
 
     return(
         <>
+         <Register />
         <div className="conta">
                 <div className="disc">
                     <h1>Messia's Mission Ministry Ethiopia</h1>

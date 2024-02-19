@@ -56,6 +56,8 @@
     .nav {
         flex-direction: column; /* Stack items in a column on small screens */
         align-items:end;
+    
+
     }
 
     .ul {
@@ -73,6 +75,7 @@
         left: 0;
         width: 100%;
         height: auto;
+        z-index: 5;
     }
 
 

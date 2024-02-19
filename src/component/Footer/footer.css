@@ -55,13 +55,16 @@
     .conta {
       width: 100%;
       flex-direction: column; /* Switch back to row layout for larger screens */
-    }
+      height: auto;    
+      align-items: center;
+}
   
     .disc h1, .address {
-      width: 70%; /* Adjust width for larger screens */
+      width: 80%; /* Adjust width for larger screens */
       margin-top: 30px; /* Add margin back for larger screens if needed */
       margin-bottom: 30px;
       padding: 0;
+      text-align: center;
     }
   
     .disc h1 {
