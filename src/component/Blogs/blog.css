@@ -44,6 +44,12 @@
     height: 100%;
     position: relative; /* Added position relative */
   }
+
+  .header{
+    margin-left: 80px;
+    margin-top: 80px;
+    color: black;
+  }
   
   .post-slider .slider-title {
     margin-left: 500px;
@@ -72,13 +78,13 @@
     height: 250px;
   }
   .post-slider .post {
-    background: blueviolet;
+    background: white;
     height: 100%;
   }
   
   .card{
   height: 200px;
-  background-color: rgb(154, 134, 178);
+  background-color: #c2c6c8;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -111,7 +117,7 @@
 }
 
 .slider-title {
-  padding-left: 0; /* Remove padding for full width */
+  padding-left: 0px; /* Remove padding for full width */
 }
 
 .post-slider .post-wrapper .slick-slide {

@@ -1,13 +1,3 @@
-import getPost from '../lib/getPostes';
-
-
-const fetchPostData = async () => {
-    const posts = await getPost();
-    console.log(posts); // This will log the fetched posts
-};
-
-fetchPostData();
-
 const blogs = {
     blogList: [
         {

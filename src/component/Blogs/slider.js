@@ -3,14 +3,13 @@ import Slider from "react-slick";
 import { useNavigate } from "react-router-dom";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import blogs from "../../Pages/blogsData";
 
 export default function SimpleSlider() {
   const navigate = useNavigate();
 
-  const handleSlideClick = (blogId) => {
+  const handleSlideClick = () => {
     // Navigate to the blogdetails page with the corresponding blogId
-    navigate(`/blogdetails/${blogId}`);
+    navigate(`/blog/`);
   };
 
   const settings = {
@@ -33,11 +32,10 @@ export default function SimpleSlider() {
 
   return (
     <Slider {...settings}>
-      {blogs.blogList.map(blog => (
-        <div key={blog.id} className="card" onClick={() => handleSlideClick(blog.id)}>
-          <h5>{blog.title}</h5>
-        </div>
-      ))}
+      <div className="card" onClick={handleSlideClick}><h5 className="header">Visit Our Blogs</h5></div>
+      <div className="card" onClick={handleSlideClick}><h5 className="header">Visit Our Blogs</h5></div>
+      <div className="card" onClick={handleSlideClick}><h5 className="header">Visit Our Blogs</h5></div>
+      <div className="card" onClick={handleSlideClick}><h5 className="header">Visit Our Blogs</h5></div>
     </Slider>
   );
 }
