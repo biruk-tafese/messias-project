@@ -1,0 +1,88 @@
+
+
+
+.conta {
+  height: 350px;
+  width: 100%;
+  background-color: #c2c6c8;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  border: 1px solid #ccc; /* Add border */
+}
+
+
+.disc{
+    
+    padding-bottom: 50px;
+    padding-top:60px;
+    text-align: center;
+    width: 100%;
+}
+.disc h1{
+    margin-bottom: 5px;
+    margin-left: 0px;
+    width: 400px;
+    padding-top: 80px;
+}
+
+.address{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 40%;
+  margin-left: 30px;
+  text-indent: 20px;
+  margin: 60px;
+}
+
+
+.socials{
+    padding-bottom:200px;
+}
+.social{
+    margin: 10px;
+}
+
+  
+  .disc, .address {
+    width: 100%; /* Full width for smaller screens */
+    margin: 0; /* Remove margin for full width */
+  }
+  
+  /* Media query for larger screens (min-width: 850px) */
+  @media screen and (max-width: 950px) {
+    .conta {
+      width: 100%;
+      flex-direction: column; /* Switch back to row layout for larger screens */
+      height: auto;    
+      align-items: center;
+}
+  
+    .disc h1, .address {
+      width: 80%; /* Adjust width for larger screens */
+      margin-top: 30px; /* Add margin back for larger screens if needed */
+      margin-bottom: 30px;
+      padding: 0;
+      text-align: center;
+    }
+  
+    .disc h1 {
+      font-size: 26px;
+
+      padding: 5px;
+      font-size: 25px;
+
+
+      padding-left: 10px;
+      width: 350px;
+
+    }
+
+  }
+  
+  /* Additional styles for the icons to adjust size on smaller screens */
+  .icons {
+    font-size: 24px; /* Adjust icon size for smaller screens */
+  }
+  

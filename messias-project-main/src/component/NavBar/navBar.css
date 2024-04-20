@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.nav {
+    background-color: #1d5173;
+    display: flex;
+    justify-content: space-between; /* Adjust for responsiveness */
+    align-items: center;
+    padding: 20px 10%; /* Adjust padding for responsiveness */
+}
+
+.logo {
+    color: #fff;
+    font-size: 25px;
+}
+
+.ul {
+    list-style: none;
+    display: flex;
+}
+
+.ul li {
+    margin-right: 15px; /* Adjust spacing between list items */
+}
+
+.ul li:last-child {
+    margin-right: 0; /* Remove right margin for the last item */
+}
+
+.ul li a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-decoration: none;
+    /* border-radius: 5px; */
+}
+
+.ul li a:hover {
+    color: #ca840a;
+}
+
+.btn-collapse {
+    background-color: #1d5173;
+    border: none;
+    cursor: pointer;
+    display: none; /* Initially hide the button on larger screens */
+    font-size: 20px;
+    color: #fff;
+}
+
+/* Media query for mobile responsiveness */
+@media (max-width: 849px) {
+    .nav {
+        flex-direction: column; /* Stack items in a column on small screens */
+        align-items:end;
+    
+
+    }
+
+    .ul {
+        margin-top: 60px; /* Add space between logo and navigation links */
+        display: none; /* Initially hide the navigation links on small screens */
+        align-items: center;
+    }
+
+    .ul.show {
+        display: flex; /* Show the navigation links when the show class is added */
+        flex-direction: column; /* Stack navigation links in a column */
+        background-color: #1d5173;
+        position: absolute;
+        top: 70px; /* Adjust the top position to avoid overlapping with the logo */
+        left: 0;
+        width: 100%;
+        height: auto;
+        z-index: 5;
+    }
+
+
+    .ul li {
+        margin-right: 0;
+        margin-bottom: 10px; /* Add space between navigation links on small screens */
+        padding: 20px;
+    }
+
+    .btn-collapse {
+
+        display: block; /* Show the button on small screens */
+    }
+}

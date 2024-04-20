@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,600;1,800&family=Roboto+Slab:wght@500;600;900&display=swap');
+
+.container {
+    margin-left: 40px;
+}
+
+hr {
+    height: 4px;
+    width: 90%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    background: linear-gradient(to right, transparent, #00114e, transparent);
+  }
+  
+.title  {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+
+
+.content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+  margin-top: 30px; /* Adjust margin as needed */
+}
+
+.right-content,
+.left-content {
+  box-shadow: 0 4px 8px rgba(28, 10, 10, 0.1); /* Shadow effect */
+  border-radius: 8px; /* Rounded corners */
+  padding: 12px; 
+  text-align: left;
+}
+
+.right-content {
+  flex: 1;
+  order: 2;
+  margin-right: 10px; /* Adjust margin between right and left content */
+  transition: all .5s ease-in;
+
+}
+
+.right-content p,
+.left-content p {
+  font-family: 'Romans', 'Georgia'; /* Font family for paragraphs */
+  font-size: 15px; /* Font size for paragraphs */
+  margin-top: 20px;
+}
+
+.left-content {
+  flex: 1;
+  margin-right: 10px; /* Adjust margin between left and right content */
+  transition: all .5s ease-in;
+}
+
+.purpose {
+  margin-left: 40px;
+}
+
+/* Animation of the contents */
+.right-content:hover,
+.left-content:hover {
+  transform: translateY(-5px); /* Move content 5px up on hover */
+  background-color: #e0dddd; /* Background color for the card */
+
+}
+  
+  /* Adjust styles as needed */
+  .right-content-2 {
+    flex: 1;
+    order: 1;
+    padding: 4px;
+    margin-right: 30px;
+    text-align: left;
+    transition: all .5s ease-in;
+
+  }
+
+  .left-content-2 {
+    flex: 1;
+    order: 1;
+    margin-right: 40px;
+    font-size: 20px; /* Font size for paragraphs */
+    transition: all .5s ease-in;
+    font-family: 'Romans', 'Georgia'; /* Font family for paragraphs */
+
+
+  }
+ 
+  .objective {
+    margin-right: 40px;
+  }
+
+  .right-content-2 p, .left-content-2 p {
+    font-family: 'Romans', 'Georgia'; /* Font family for paragraphs */
+    font-size: 15px;
+    margin-top: 20px;
+
+  }
+  
+  .right-content:hover,
+  .left-content:hover, .right-content-2:hover,
+  .left-content-2:hover {
+    transform: translateY(-5px); /* Move content 5px up on hover */
+    background-color: #e0dddd; /* Background color for the card */
+  
+  }
+
+
+  .footer {
+    margin-top: 50px;
+  }
+/* ... (existing styles) */
+
+/* Media query for mobile devices */
+@media (max-width: 767px) {
+  .right-content img,
+  .left-content img,
+  .right-content-2 img,
+  .left-content-2 img {
+    order: -1; /* Move the image to the top on mobile devices */
+    margin-bottom: 15px; /* Add bottom margin for better spacing on mobile devices */
+    width: 100%; /* Make sure images take full width on mobile devices */
+  }
+    /* Common styles for all screen sizes */
+
+/* ... (existing styles) */
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 15px;
+
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column; /* Adjusted to a column layout for mobile devices */
+  align-items: center; /* Center content on mobile devices */
+  margin-top: 15px; /* Adjusted margin for better responsiveness */
+}
+
+
+
+.right-content,
+.left-content-2 
+.left-content,
+.right-content-2 {
+  padding: 10px; /* Adjusted padding for better spacing on mobile devices */
+}
+
+
+}

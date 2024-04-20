@@ -1,0 +1,50 @@
+/* Common styles for all screen sizes */
+.home {
+    background: url('./background.jpg');
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+}
+
+.welcome-text {
+    color: white;
+    font-weight: bold;
+}
+
+.h1 {
+    margin-bottom: 15px;
+}
+
+.h3 {
+    margin-left: 50px;
+}
+
+/* Media query for small screens (max-width: 849px) */
+@media screen and (max-width: 849px) {
+    .home {
+        height: 60vh;
+    }
+
+    .welcome-text {
+        text-align: center;
+    }
+
+    .h3 {
+        margin-left: 0;
+    }
+}
+
+/* Media query for medium screens (850px to 991px) */
+@media screen and (min-width: 850px) and (max-width: 991px) {
+    .home {
+        height: 80vh;
+    }
+}
+
+/* Media query for large screens (min-width: 992px) */
+@media screen and (min-width: 992px) {
+    /* Add styles specific to larger screens if needed */
+    
+}

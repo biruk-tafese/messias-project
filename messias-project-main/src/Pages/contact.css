@@ -1,0 +1,307 @@
+/*  container */
+
+
+.title {
+  margin-top: 100px;
+  margin-left: 27px;
+  font-size: 40px;
+  color: rgb(74, 75, 77);
+
+}
+
+.infocontainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Creates 3 columns of equal width */
+  width: 100%;
+  height: 50vh;
+}
+
+/* Styles for each inner div */
+.infocontainer > div {
+  height: 100%; /* Set height of each div to 100% of .infocontainer */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Adjust vertical alignment if needed */
+  padding: 6px; /* Add padding for inner content */
+}
+
+
+.address-info {
+  margin-left: 40px;
+  list-style: none; /* Remove default list styles */
+  display: flex;
+  flex-direction: column;
+
+}
+
+ul {
+ /* Remove default list styles */
+ list-style: none;
+}
+
+
+.ourAdd1 {
+  padding-bottom: 7px;
+  padding-top:15px;
+  color: rgb(8, 62, 109);
+  font-size: 25px;
+}
+
+.ourAdd2 {
+  padding-bottom: 5px;
+  color: rgb(8, 62, 109);
+  font-size: 25px;
+  margin: 0;
+}
+.ourAdd3{
+  padding-bottom: 7px;
+  padding-top:15px;
+  color: rgb(8, 62, 109);
+  font-size: 25px;
+}
+
+.contact-info {
+  list-style: none; /* Remove default list styles */
+  display: flex;
+  flex-direction: column;list-style: none; /* Remove default list styles */
+  display: flex;
+  flex-direction: column;
+  font-size: 25px;
+}
+
+.person-info {
+  list-style: none; /* Remove default list styles */
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+
+}
+
+.contact-item {
+  display: flex;
+  align-items: flex-start; /* Align items to the start */
+  margin-bottom: 3px; /* Adjust margin between items */
+  font-size: 15px;
+}
+
+.icons {
+  color:red;
+}
+
+.contact-item:hover {
+  .icons{
+      color: rgb(70, 65, 65);
+      cursor: pointer;
+  }
+}
+
+.icon-description {
+  display: flex;
+  align-items: center; /* Align items vertically */
+  margin-left: 10px; /* Adjust space between icon and description */
+}
+
+.icon-description svg {
+  margin-right: 10px; /* Adjust space between icon and text */
+}
+a {
+  color: rgb(66, 64, 64);
+}
+
+
+/*  Section two stying*/
+.container-two {
+  background-image: url('../Images/Donateeee.jpg');
+  background-size: cover;
+  margin-top: 60px;
+  height: 70vh; /* Set to 100% of the viewport height */
+  width: 100%;
+   /* filter: blur(5px);  Adjust the blur radius as needed */
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+}
+
+.container-two h1 {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 60px;
+  padding-top: 30px;
+  font-style: 'Georgia';
+}
+
+.SupportBtn {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.SupportBtn button {
+  padding: 15px 35px;
+  margin: 0 5px;
+  background-color: red;
+  color: white;
+  font-size: 20px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+
+}
+.SupportBtn button:hover {
+  background-color: rgb(149, 12, 12);
+  border-radius: 5px;
+  box-shadow: inset;
+}
+
+.SupportBtn button a {
+color: rgb(255, 255, 255);
+}
+
+.container-three {
+max-width: 80%;
+margin-left: 47px;
+text-align: left;
+}
+
+.titleContact {
+padding-top: 30px;
+padding-bottom: 15px;
+font-size: 43px;
+color: rgb(68, 70, 76);
+}
+
+.fname, .surename,
+.email-phone {
+display: flex;
+flex-direction: row;
+gap: 15px;
+}
+
+.input-fields {
+margin-bottom: 20px;
+}
+
+.input-fields input {
+width: calc(50% - 7.5px); /* Equal width for both elements */
+padding: 23px;
+margin-bottom: 10px;
+border-radius: 5px;
+border: 0.6px solid #2a2929;
+box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.input-fields textarea {
+width: calc(101% - 7.5px); /* Equal width for both elements */
+padding: 23px;
+margin-bottom: 10px;
+border-radius: 5px;
+border: 0.6px solid #2a2929;
+box-sizing: border-box; /* Include padding in width calculation */
+}
+textarea {
+height: 123px; /* Adjusted height to match input fields */
+resize: vertical; /* Allow vertical resizing */
+}
+
+button[type='submit'] {
+padding: 10px 50px;
+margin-bottom: 120px;
+margin-top: 2px;
+background-color: rgb(157, 10, 10);
+color: white;
+font-size: 20px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+transition: all .3s ease-in-out;
+}
+
+button[type='submit']:hover {
+background-color: rgb(94, 4, 4);
+}
+
+
+/* Common styles for all screen sizes */
+
+/* ... (existing styles) */
+
+/* Media query for tablets and smaller screens */
+@media (max-width: 899px) {
+
+body {
+  text-align: center;
+}
+.infocontainer {
+  grid-template-columns: repeat(2, 1fr); /* Display 2 columns for tablets */
+  margin: 20px;
+}
+
+.person-info {
+  margin-bottom: 100px;
+}
+.container-two {
+  margin-top: 80px;
+  padding-top: 200px;
+
+}
+.container-two h1 {
+  font-size: 30px; /* Reduce font size for smaller screens */
+}
+
+.SupportBtn button {
+  padding: 12px 25px; /* Adjust padding for smaller screens */
+  font-size: 18px; /* Adjust font size for smaller screens */
+  margin-left: 40%;
+}
+ 
+
+.container-three {
+  max-width: 100%; /* Adjust max-width for smaller screens */
+  margin: 5px; /* Remove left margin for smaller screens */
+}
+
+.input-fields input,
+.input-fields textarea {
+  width: 100%; /* Make input fields take full width on smaller screens */
+}
+}
+
+/* Media query for mobile devices */
+@media (max-width: 767px) {
+.title {
+  margin-top: 40px;
+  margin-left: 27px;
+  font-size: 40px;
+  color: rgb(74, 75, 77);
+
+}
+.infocontainer {
+  grid-template-columns: repeat(1, 1fr); /* Display 1 column for mobile devices */
+  margin: 10px;
+  padding-right: 10px;
+}
+
+.container-two {
+  margin-top: 500px;
+}
+.container-three {
+font-size: 16px;
+}
+.container-two h1 {
+  font-size: 25px; /* Further reduce font size for mobile devices */
+}
+
+.SupportBtn {
+  flex-direction: column; /* Stack buttons vertically on mobile devices */
+  align-items: center; /* Center buttons on mobile devices */
+}
+
+.SupportBtn button {
+  margin: 10px 0; /* Adjust margin between buttons on mobile devices */
+}
+
+
+}

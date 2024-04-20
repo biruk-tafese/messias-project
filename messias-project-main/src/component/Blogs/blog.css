@@ -1,0 +1,171 @@
+/* Blog.css */
+
+.parent {
+    margin-right: 90px;
+    margin-left: 90px;
+    margin-top: 60px;
+    height: 400px;
+  }
+  
+  .content {
+    width: 40%;
+    margin-top: 50px;
+    margin-left: 100px;
+    padding-right: 20px; /* Add padding to the right to separate content from the slider */
+  }
+  
+  .content h1 {
+    margin-bottom: 20px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .content p {
+    margin-bottom: 20px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .content button {
+    text-align: center;
+    color: white;
+    padding: 17px 68px 16px 68px;
+    background-color: #be3220;
+    border-radius: 10px;
+  }
+  
+  .page-wrapper {
+    margin-right: 50px;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .post-slider {
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 100%;
+    position: relative; /* Added position relative */
+  }
+
+  .header{
+    margin-left: 80px;
+    margin-top: 80px;
+    color: black;
+  }
+  
+  .post-slider .slider-title {
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    color: #534f4f;
+  }
+  .slider-title{
+    padding-left: 50px;
+    padding-bottom: 30px;
+  }
+  .post-slider .post-wrapper {
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 100%;
+    margin: 0% auto;
+  }
+  
+  /* Adjust the width of .post to your liking */
+  .post-slider .post-wrapper .slick-slide {
+    width: 25%;
+    height: 100%;
+    padding: 0 10px;
+  }
+  .slick-list{
+    height: 250px;
+
+  }
+  .post-slider .post {
+    background: white;
+    height: 100%;
+  }
+  
+  .card {
+    height: 200px;
+    background-color: #c2c6c8;
+    border-radius: 8px;
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    width: 20%;
+  }
+  
+
+  .slick-prev:before{
+    color: #be3220;
+  }
+  .slick-next:before{
+    color: #be3220;
+  }
+
+
+
+
+  /* Common styles for all screen sizes */
+.parent {
+  align-items: center; /* Center content vertically */
+  margin-top: 20px; /* Adjust margin for spacing */
+}
+
+.page-wrapper {
+  width: 100%;
+  margin-right: 0; /* Remove right margin for full width */
+}
+
+.slider-title {
+  padding-left: 0px; /* Remove padding for full width */
+}
+
+.post-slider .post-wrapper .slick-slide {
+  width: 60%; /* Full width for mobile */
+}
+
+/* Media query for medium screens (min-width: 850px) */
+@media screen and (min-width: 851px) {
+  /* .parent {
+    flex-direction: row; 
+  } */
+
+  .content {
+    width: 40%;
+    margin-top: 50px;
+    margin-left: 80px;
+    padding-right: 20px;
+  }
+
+  .page-wrapper {
+    /* margin-right: 50px; */
+    width: 100%;
+  }
+
+  .post-slider .post-wrapper .slick-slide {
+    width: 100%;
+  }
+}
+
+/* Add these styles to your Blog.css file */
+
+/* Adjust the width of .post-slider .post-wrapper .slick-slide for smaller screens */
+@media screen and (max-width: 850px) {
+  .post-slider .post-wrapper .slick-slide {
+    width: 100%; /* Full width for smaller screens */
+    text-align: center;
+
+  }
+}
+
+/* Center the slider title on smaller screens */
+@media screen and (max-width: 849px) {
+
+  .post-slider .slider-title {
+    text-align: center;
+    margin-left: 0; /* Remove or adjust the margin as needed */
+  }
+  .slider-title {
+    text-align: center;
+    padding-left: 0;
+    margin-left: 200px; /* Remove or adjust the margin as needed */
+  }
+}

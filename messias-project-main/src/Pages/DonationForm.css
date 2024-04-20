@@ -1,0 +1,62 @@
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.donation-form-container {
+
+    float: center;
+    margin: auto;
+    width: 80%;
+    max-width: 500px;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+
+.donation-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.form-title {
+    width: 100%;
+    color: #8d0404;
+    padding: 40px;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 60px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    float: center;
+
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
