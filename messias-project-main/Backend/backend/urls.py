@@ -24,11 +24,11 @@ admin.site.index_title = 'Admin'
 
 schema_view = get_schema_view(
     openapi.Info(
-        title="Your API Title",
+        title="messiahnicministry API",
         default_version='v1',
-        description="Your API Description",
-        terms_of_service="https://www.example.com/policies/terms/",
-        contact=openapi.Contact(email="contact@example.com"),
+        description="API for Messiah's Mission Ministry",
+        terms_of_service="https://www.messiahnicminstiry.com/",
+        contact=openapi.Contact(email="cstafesebiruk23@gmail.com"),
         license=openapi.License(name="BSD License"),
     ),
     public=True,
